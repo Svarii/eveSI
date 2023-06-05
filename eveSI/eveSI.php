@@ -30,10 +30,7 @@ require('eveSI_endpoints.php');
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null):string{
         
-        $esiURI = BASEURI . '/' . VERSION . '/' . $endpoint . '/?datasource=' . DATASOURCE;
-        //$esiURI = sprintf('%s/%s/%s/?datasource=%s', BASEURI, VERSION, $endpoint, DATASOURCE);
-        
-       
+        $esiURI = BASEURI . '/' . VERSION . '/' . $endpoint . '/?datasource=' . DATASOURCE;      
         $ch = curl_init();
         $headers = array();
         $headers[] = 'Accept: application/json';
@@ -71,13 +68,11 @@ Class eveSI{
         $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
         $headers = substr($result, 0, $header_size);
         $body = substr($result, $header_size);
-        $_SESSION['comm_response_headers'] = $headers; //TODO: Parse into something you can use.
+        $_SESSION['_esiRequestHandlerResponseHeaders'] = $headers; //TODO: Parse into something you can use.
         
         curl_close($ch);
         
         return $body;
     }
 }
-
-
 ?>
