@@ -119,14 +119,12 @@ Class characters_endpoints{
     public $calendar;
     public $characterInformation;
     public $agentsResearch;
-    
     public $blueprints;
     public $corporationHistory;
     public $cspa;
     public $fatigue;
     public $medals;
     public $notifications;
-    //public $notifications->contacts
     public $portrait;
     public $roles;
     public $standings;
@@ -135,16 +133,9 @@ Class characters_endpoints{
     public $clones;
     public $implants;
     public $contacts;
-    //contacts->labels
     public $contracts;
-    //contracts/{id}/bids
-    //contracts/{id}/items
     public $fleet;
-    //industry/jobs
     public $mining;
-    //mining extraction
-    //mining observers
-    //mining observers id
     public $killmails;
     public $location;
     public $online;
