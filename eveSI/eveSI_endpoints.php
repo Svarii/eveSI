@@ -6,8 +6,7 @@ Class eveSI_endpoints{
     public $coporations;
     public $dogma;
     public $fw;
-    //public $fleet;
-    //public $imageServer;
+    public $fleet;
     public $incursion;
     public $industry;
     public $insurance;
@@ -27,8 +26,7 @@ Class eveSI_endpoints{
         $this->corporations = new corporations_endpoints;
         $this->dogma = new dogma_endpoints;
         $this->fw = new fw_endpoints();
-        //$this->fleet = new fleet_endpoints();
-        //$this->imageServer = new 
+        $this->fleet = new fleet_endpoints();
         $this->incursion = new incursion_endpoints();
         $this->industry = new industry_endpoints();
         $this->insurance = new insurance_endpoints();
