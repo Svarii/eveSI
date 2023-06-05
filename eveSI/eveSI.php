@@ -1,15 +1,4 @@
 <?php
-namespace eveSI;
-require_once('constants.php'); //Application Settings
-use const eveSI\BASEURI; //Base URI of the Eve Swagger Interface
-use const eveSI\DATASOURCE; //The server to pull the data from
-use const eveSI\LANGUAGE;
-use const eveSI\VERSION; //The version of the API you want to use (App wide default)
-//use const eveSI\IMAGESERVER; //it unlikley we'll need a direct interface to the image server.  Use dynaic URIs pulled from the API to link images.
-
-require('eveSI_endpoints.php'); //endpoint connectors?  FIXME: Standardize format and flow : IN Progress :  plantuml and phpdocs in continuous development
-
-
 /**
  * @var eveSI
  * @author Svarii
@@ -23,8 +12,20 @@ require('eveSI_endpoints.php'); //endpoint connectors?  FIXME: Standardize forma
             PHPDocs: Yes
             PlantUML: Yes
             gitHub Wiki: Yes
-            
  */
+namespace eveSI;
+
+// Application Settings
+require_once('constants.php');
+
+// Use constants from the Eve Swagger Interface
+use const eveSI\BASEURI; 
+use const eveSI\DATASOURCE;
+use const eveSI\LANGUAGE;
+use const eveSI\VERSION;
+
+// Endpoint connectors
+require('eveSI_endpoints.php');
 
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null):string{
