@@ -1,14 +1,29 @@
 <?php
 namespace eveSI;
-require_once('constants.php');
-use const eveSI\BASEURI;
-use const eveSI\DATASOURCE;
+require_once('constants.php'); //Application Settings
+use const eveSI\BASEURI; //Base URI of the Eve Swagger Interface
+use const eveSI\DATASOURCE; //The server to pull the data from
 use const eveSI\LANGUAGE;
-use const eveSI\VERSION;
-use const eveSI\IMAGESERVER;
-require('eveSI_endpoints.php');
+use const eveSI\VERSION; //The version of the API you want to use (App wide default)
+//use const eveSI\IMAGESERVER; //it unlikley we'll need a direct interface to the image server.  Use dynaic URIs pulled from the API to link images.
+
+require('eveSI_endpoints.php'); //endpoint connectors?  FIXME: Standardize format and flow : IN Progress :  plantuml and phpdocs in continuous development
+
+
 /**
+ * @var eveSI
  * @author Svarii
+ * @desc A PHP wrapper for the Eve Swagger Interface API<br/>
+            Endpoints Included: All (I think, as of 06/05/2023)<br/>
+            eTag Compliance: No, Addition Planned
+            cache-Control Comliance: No, Addition Planned
+            error checking: Virtually none, Planned addition during marjor refactoring
+            composer?  Nope, I'll look into this.
+            docker?  Nope, sounds cool though, I'll have to check it out.
+            PHPDocs: Yes
+            PlantUML: Yes
+            gitHub Wiki: Yes
+            
  */
 
 Class eveSI{
