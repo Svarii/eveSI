@@ -107,15 +107,4 @@ const ENABLE_DEBUG = false;
  *     @since v0.0.1a
  */
 const SWAGGER_JSON = "https://esi.evetech.net/latest/swagger.json";
-
-
-
-
-
-
-
-
-
-
-
 ?>
