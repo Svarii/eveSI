@@ -102,7 +102,7 @@ const ENABLE_DEBUG = false;
 //Not implimented
 /**
  * @var const SWAGGER_JSON
- * @desc The URI to location of the Eve Online ESI swagger.json file
+ * @desc The URI to the location of the Eve Online ESI swagger.json file
  * @param string URI
  *     @since v0.0.1a
  */
