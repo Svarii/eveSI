@@ -28,9 +28,37 @@ use const eveSI\VERSION;
 require('eveSI_endpoints.php');
 
 Class eveSI{
-    protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null):string{
+    protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
         
-        $esiURI = BASEURI . '/' . VERSION . '/' . $endpoint . '/?datasource=' . DATASOURCE;      
+        //These checks are in place to compensate for the possible absesnce of a constants.php file
+        //All of these constant variables should be defined in the constants.php file
+        //BASEURI
+        //USERAGENT
+        //VERSION
+        //DATASOURCE
+        //This block of code is only here to ensure functionality of the _esiRequestHandler remains constant at its base level
+        if (!defined('BASEURI')){
+            $base_uri = "https://esi.evetech.net";
+        } else {
+            $base_uri = BASEURI;
+        }
+        if (!defined('USERAGENT')) {
+            $useragent = "{eveSI || https://github.com/Svarii/eveSI}";
+        } else {
+            $useragent = USERAGENT;
+        }
+        if (!defined('VERSION')){
+            $version = 'latest';
+        } else {
+            $version = VERSION;
+        }
+        if($defined('DATASOUCE')){
+            $datasource = 'tranquility';
+        } else {
+            $datasource = DATASOURCE;
+        }
+       
+        $esiURI = "{$base_uri}/{$version}/{$endpoint}/?datasource={$datasource}";      
         $ch = curl_init();
         $headers = array();
         $headers[] = 'Accept: application/json';
@@ -41,7 +69,7 @@ Class eveSI{
             $headers[] = 'Authorization: Bearer ' . $access_token;
         }
         
-        curl_setopt($ch, CURLOPT_USERAGENT, "Svarii || mpeplow855@gmail.com {NEW APP || Test Application for PHP ESI Class Module Development}");
+        curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
         curl_setopt($ch, CURLOPT_URL,  $esiURI);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
@@ -53,15 +81,17 @@ Class eveSI{
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         
         $result = curl_exec($ch);
+        //file_put_contents('results_esiRequestHandler.log', $result);
         
         if (curl_errno($ch)) {
             $error_message = curl_error($ch);
             $error_code = curl_errno($ch);
             $error_details = curl_getinfo($ch);
             
-            echo 'Error Code: ' . $error_code . PHP_EOL;
-            echo $_SESSION['error_string'] = 'Error Message: ' . $error_message . PHP_EOL;
-            echo 'Error Details: ' . print_r($error_details, true) . PHP_EOL;
+            $errorLog = 'Error Code: ' . $error_code . PHP_EOL;
+            $errorLog .= 'Error Message: ' . $error_message . PHP_EOL;
+            $errorLog .= 'Error Details: ' . print_r($error_details, true) . PHP_EOL;
+            file_put_contents('erros_esiRequestHandler.log', $error_log);
         }
         
         // Return headers separately from the Response Body
