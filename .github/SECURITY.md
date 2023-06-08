@@ -8,9 +8,6 @@ currently being supported with security updates.
 | Version | Supported   : NONE |
 | ------- | ------------------ |
 | 0.0.xa  | :small_red_triangle_down:     |
-| 5.0.x   | :x:                |
-| 4.0.x   | :green_circle:     |
-| < 4.0   | :x:                |
 
 ## Reporting a Vulnerability :  DON'T, How did you find this?
 
