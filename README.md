@@ -1,4 +1,5 @@
-![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)
+![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)<HR>
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 Savepoint for eveSI v0.0.01a
 -preAlpha code in developement
