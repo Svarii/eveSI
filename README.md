@@ -1,7 +1,7 @@
 Savepoint for eveSI v0.0.01a
 -preAlpha code in developement
 
-<b>DRAFT [Yes this GPT4, it's great for grunt work if you can prompt it properly.]<br/>
+<b>DRAFT [Yes this GPT4 writing what this program is ; waste of time to do this myself atm. it's great for grunt work if you can prompt it properly.]<br/>
 At the base of the hierarchy is the eveSI class, which contains the core functionality for making API requests (_esiRequestHandler). This base class is extended by various endpoint classes (like alliances_endpoints, characters_endpoints, etc.) each representing a specific API endpoint. These endpoint classes encapsulate the specifics of interacting with their respective API endpoints while inheriting the basic request functionality from the eveSI class.
 
 Some of these endpoint classes are further extended by more specific classes that represent different request handlers for the endpoints (like getAlliancesContacts, getAlliancesCorporations, etc.). These classes provide specific methods for fetching and interacting with data from their respective endpoints.
