@@ -21,4 +21,4 @@ This code is extremly unstable, incomplete, full of bugs, and probably won't wor
 This respository was set up so I could click on everything and learn GitHub features rapidly as I make this program.
 
 However, if you are still going to download this: _esiRequestHandler is the base class file you want to start looking at.
-Which is shown in the plantUML file (also incomplete)
+Which is shown in the plantUML file (also incomplete, and wrong)
