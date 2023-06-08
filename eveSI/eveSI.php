@@ -25,7 +25,7 @@ use const eveSI\LANGUAGE;
 use const eveSI\VERSION;
 
 // Endpoint connectors
-require('eveSI_endpoints.php');
+require('endpoints/endpoints.php');
 
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
