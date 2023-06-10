@@ -5,7 +5,7 @@
  * @desc Application Settings
  * @namespace eveSI
  */
-namespace eveSI;
+namespace eveSI\config;
 /**
  * @var const CLIENT_ID
  * @desc The Client ID generated when registering an Eve Online Application 
