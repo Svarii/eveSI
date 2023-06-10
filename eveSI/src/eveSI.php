@@ -104,7 +104,7 @@ Class eveSI{
             $errorLog = 'Error Code: ' . $error_code . PHP_EOL;
             $errorLog .= 'Error Message: ' . $error_message . PHP_EOL;
             $errorLog .= 'Error Details: ' . print_r($error_details, true) . PHP_EOL;
-            file_put_contents('erros_esiRequestHandler.log', $error_log);
+            file_put_contents('errors_esiRequestHandler.log', $error_log);
         }
         
         // Return headers separately from the Response Body
