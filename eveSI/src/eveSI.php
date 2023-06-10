@@ -32,12 +32,12 @@ use const eveSI\ENABLE_DEBUG;
 use const eveSI\SWAGGER_JSON;
 
 // Endpoint connectors
-require('endpoints/endpoints.php');
+require('endpoints/_endpoints.php');
 
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
         
-        //These checks are in place to compensate for the possible absesnce of a constants.php file
+        //These checks are in place to compensate for the possible absesnce of a /config/core.php file
         //All of these constant variables should be defined in the constants.php file
         //BASEURI
         //USERAGENT
