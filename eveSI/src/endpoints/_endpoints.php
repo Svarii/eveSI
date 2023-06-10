@@ -1,5 +1,5 @@
 <?php
-namespace eveSI;
+namespace eveSI\endpoints;
 
 $endpoints_folder = 'endpoints';
 include("{$endpoints_folder}/alliance_endpoints.php");
