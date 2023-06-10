@@ -43,6 +43,7 @@ Class eveSI{
         //USERAGENT
         //VERSION
         //DATASOURCE
+        //ENABLE_SSL
         //This block of code is only here to ensure functionality of the _esiRequestHandler remains constant at its base level
         if (!defined('BASEURI')){
             $base_uri = "https://esi.evetech.net";
@@ -64,6 +65,11 @@ Class eveSI{
         } else {
             $datasource = DATASOURCE;
         }
+        if($defined('ENABLE_SSL')){
+            $datasource = true';
+        } else {
+            $datasource = ENABLE_SSL;
+        }                
        
         $esiURI = "{$base_uri}/{$version}/{$endpoint}/?datasource={$datasource}";      
         $ch = curl_init();
