@@ -5,7 +5,7 @@
  * @desc A PHP wrapper for the Eve Swagger Interface API<br/>
             Endpoints Included: All (I think, as of 06/05/2023)<br/>
             eTag Compliance: No, Addition Planned
-            cache-Control Comliance: No, Addition Planned
+            cache-Control Compliance: No, Addition Planned
             error checking: Virtually none, Planned addition during marjor refactoring
             composer?  Nope, I'll look into this.
             docker?  Nope, sounds cool though, I'll have to check it out.
