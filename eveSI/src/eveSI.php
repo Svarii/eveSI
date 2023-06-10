@@ -18,11 +18,18 @@ namespace eveSI;
 // Application Settings
 require_once('config/core.php');
 
-// Use constants from the Eve Swagger Interface
+// Use constants defined in config/core.php
 use const eveSI\BASEURI; 
 use const eveSI\DATASOURCE;
 use const eveSI\LANGUAGE;
 use const eveSI\VERSION;
+
+use const eveSI\CLIENT_ID;
+use const eveSI\SECRET_KEY;
+use const eveSI\ENABLE_SSL;
+use const eveSI\IMAGESERVER;
+use const eveSI\ENABLE_DEBUG;
+use const eveSI\SWAGGER_JSON;
 
 // Endpoint connectors
 require('endpoints/endpoints.php');
