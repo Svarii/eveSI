@@ -16,7 +16,7 @@
 namespace eveSI;
 
 // Application Settings
-require_once('src/config/core.php');
+require_once('config/core.php');
 
 // Use constants from the Eve Swagger Interface
 use const eveSI\BASEURI; 
