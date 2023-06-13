@@ -67,7 +67,7 @@ Class eveSI_endpoints{
 
 
 //TODO:: Add this structure/functionality to all files in the endpoints folder
-Class getAllAlliancesList extends eveSI{
+Class allAlliancesList extends eveSI{
     function getAssociativeArray() : array{
         return json_decode($this->_esiRequestHandler('alliances'), true);
     }
@@ -75,7 +75,7 @@ Class getAllAlliancesList extends eveSI{
         return json_decode($this->_esiRequestHandler('alliances'), true);
     }
 }
-Class getAllianceCorporations extends eveSI{   
+Class allianceCorporations extends eveSI{   
     function getAssociativeArray(string $alliance_id) : array{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/corporations'), true);
     }
@@ -83,8 +83,7 @@ Class getAllianceCorporations extends eveSI{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/corporations'));
     }
 }
-Class getAllianceContacts extends eveSI{
-    
+Class allianceContacts extends eveSI{
     function getAssociativeArray(string $alliance_id) : array{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/contacts'), true);
     }
@@ -92,7 +91,7 @@ Class getAllianceContacts extends eveSI{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/contacts'));
     }
 }
-Class getAllianceIcon extends eveSI{
+Class allianceIcon extends eveSI{
     function getAssociativeArray(string $alliance_id) : array{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/icons'), true);
     }
@@ -100,7 +99,7 @@ Class getAllianceIcon extends eveSI{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}/icons'));
     }
 }
-Class getAllianceInformation extends eveSI{
+Class allianceInformation extends eveSI{
     function getAssociativeArray(string $alliance_id) : array{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}'), true);
     }
@@ -108,15 +107,6 @@ Class getAllianceInformation extends eveSI{
         return json_decode($this->esiRequestHandler('alliances/{$alliance_id}'));
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
