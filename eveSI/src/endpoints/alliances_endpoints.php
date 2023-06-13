@@ -9,6 +9,9 @@ Class allAlliancesList extends eveSI{
     function getObject() : \stdClass{
         return json_decode($this->_esiRequestHandler('alliances'), true);
     }
+    function getJSONString() : \\ string{
+        return ($this->_esiRequestHandler('alliances'));
+    }
 }
 Class allianceCorporations extends eveSI{   
     function getAssociativeArray(string $alliance_id) : array{
