@@ -4,6 +4,7 @@
 //TODO: Remove extends, this should not be nessarcy since it's included, you should be able to use $this->_esiRequestHandler
 //TDOD: Complete Abstract Class for dataconversion methods.
 
+/* This is Wrong
 abstract class convertAPIData{
     protected abstract function getAssociativeArray($endpoint_path) : array{
         return json_decode($this->_esiRequestHandler($endpoint_path), true);
@@ -15,7 +16,19 @@ abstract class convertAPIData{
         return ($this->_esiRequestHandler($endpoint_path));
     }
 }
-
+Class allAlliancesList extends eveSI{
+    $get = new convertAPIData; // Like this???
+    function getAssociativeArray() : array{
+        return json_decode($this->_esiRequestHandler('alliances'), true);
+    }
+    function getObject() : \stdClass{
+        return json_decode($this->_esiRequestHandler('alliances'), true);
+    }
+    function getJSONString() : \\ string{
+        return ($this->_esiRequestHandler('alliances'));
+    }
+}
+*/
 
 Class allAlliancesList extends eveSI{
     function getAssociativeArray() : array{
