@@ -4,19 +4,19 @@
 //TODO:: Ignore previous todo, that guy forgot what I was doing.  I think this guy is back on track.
 
 abstract class convertAPIData extends eveSI {
-    protected function getAssociativeArray() : array {
-        return json_decode($this->_esiRequestHandler($this->identifier()), true);
+    protected function getAssociativeArray($id = null) : array {
+        return json_decode($this->_esiRequestHandler($this->identifier($id)), true);
     }
 
-    protected function getObject() : \stdClass {
-        return json_decode($this->_esiRequestHandler($this->identifier()));
+    protected function getObject($id = null) : \stdClass {
+        return json_decode($this->_esiRequestHandler($this->identifier($id)));
     }
 
-    protected function getJSONString() : string {
-        return $this->_esiRequestHandler($this->identifier());
+    protected function getJSONString($id = null) : string {
+        return $this->_esiRequestHandler($this->identifier($id));
     }
 
-    abstract protected function identifier($id);
+    abstract protected function identifier($id = null);
 }
 Class allAlliancesList extends convertAPIData {
     protected function identifier($id = null) {
