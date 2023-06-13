@@ -3,6 +3,20 @@
 //TODO:: Add this structure/functionality to all files in the endpoints folder
 //TODO: Remove extends, this should not be nessarcy since it's included, you should be able to use $this->_esiRequestHandler
 //TDOD: Complete Abstract Class for dataconversion methods.
+
+abstract class convertAPIData{
+    protected abstract function getAssociativeArray($endpoint_path) : array{
+        return json_decode($this->_esiRequestHandler($endpoint_path), true);
+    }
+    protectect abstract function getObject($endpoint_path) : \stdClass{
+        return json_decode($this->_esiRequestHandler($endpoint_path), true);
+    }
+    protected abstract function getJSONString($endpoint_path) : \\ string{
+        return ($this->_esiRequestHandler($endpoint_path));
+    }
+}
+
+
 Class allAlliancesList extends eveSI{
     function getAssociativeArray() : array{
         return json_decode($this->_esiRequestHandler('alliances'), true);
