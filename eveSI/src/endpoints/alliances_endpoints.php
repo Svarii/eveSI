@@ -2,6 +2,7 @@
 <?php
 //TODO:: Add this structure/functionality to all files in the endpoints folder
 //TODO: Remove extends, this should not be nessarcy since it's included, you should be able to use $this->_esiRequestHandler
+//TDOD: Complete Abstract Class for dataconversion methods.
 Class allAlliancesList extends eveSI{
     function getAssociativeArray() : array{
         return json_decode($this->_esiRequestHandler('alliances'), true);
