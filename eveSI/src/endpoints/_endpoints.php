@@ -66,7 +66,7 @@ Class eveSI_endpoints{
 
 
 
-//TODO:: Add thisstructure/functionality to all files in the endpoints folder
+//TODO:: Add this structure/functionality to all files in the endpoints folder
 Class getAllAlliancesList extends eveSI{
     function getAssociativeArray() : array{
         return json_decode($this->_esiRequestHandler('alliances'), true);
