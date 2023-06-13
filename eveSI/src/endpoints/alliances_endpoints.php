@@ -17,7 +17,7 @@ abstract class convertAPIData extends eveSI {
 }
 
 Class allAlliancesList extends convertAPIData {
-    protected function identifier() {
+    protected function identifier($id = null) {
         return 'alliances';
     }
 }
