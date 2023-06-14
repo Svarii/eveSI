@@ -34,6 +34,9 @@ use const eveSI\SWAGGER_JSON;
 // Endpoint connectors
 require('endpoints/_endpoints.php');
 
+//Abstraction
+require('convertAPIData.php');
+
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
         
