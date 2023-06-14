@@ -1,4 +1,5 @@
 <?php
+//TODO::You might want to rethink this.  Maybe you should be not be using constants?  Just load these into a config array?
 /**
  * @author Svarii
  * @version 0.0.1a
