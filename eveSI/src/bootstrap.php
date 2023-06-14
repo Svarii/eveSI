@@ -3,7 +3,7 @@
 //TODO:: This needs a line by line review and testing
 spl_autoload_register(function ($class) {
     // Project-specific namespace prefix
-    $prefix = 'MyNamespace\\';
+    $prefix = 'eveSI\\';
 
     // Base directory for the namespace prefix
     $base_dir = __DIR__ . '/src/';
