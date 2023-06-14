@@ -63,7 +63,8 @@ Class _endpoints{
     }
 }
 
-
+//TODO:: Keep moving these.  Remember to abstract them.
+//FIXME:: Start HERE
 Class characters_clones extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/clones", $access_token), true);
