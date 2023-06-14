@@ -9,9 +9,9 @@
             error checking: Virtually none, Planned addition during marjor refactoring
             composer?  Nope, I'll look into this.
             docker?  Nope, sounds cool though, I'll have to check it out.
-            PHPDocs: Yes
-            PlantUML: Yes
-            gitHub Wiki: Yes
+            PHPDocs: Yes - On Hold
+            PlantUML: Yes - On Hold
+            gitHub Wiki: Yes - On HOld
  */
 namespace eveSI;
 
