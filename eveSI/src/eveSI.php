@@ -30,7 +30,7 @@ use const eveSI\SWAGGER_JSON;
 
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
-        
+        //FIXME:: This shoud NOT NOT NOT be in here.  Get it out of here...
         //These checks are in place to compensate for the possible absesnce of a /config/core.php file
         //All of these constant variables should be defined in the constants.php file
         //BASEURI
