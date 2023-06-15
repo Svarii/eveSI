@@ -1,26 +1,6 @@
 <?php
 namespace eveSI\endpoints\_endpoints;
 
-$endpoints_folder = 'endpoints';
-include("{$endpoints_folder}/alliance_endpoints.php");
-include("{$endpoints_folder}/characters_endpoints.php");
-include("{$endpoints_folder}/corporations_endpoints.php");
-include("{$endpoints_folder}/dogma_endpoints.php");
-include("{$endpoints_folder}/fw_endpoints.php");
-include("{$endpoints_folder}/fleet_endpoints.php");
-include("{$endpoints_folder}/incursion_endpoints.php");
-include("{$endpoints_folder}/industry_endpoints.php");
-include("{$endpoints_folder}/insurance_endpoints.php");
-include("{$endpoints_folder}/killmails_endpoints.php");
-include("{$endpoints_folder}/loyalty_endpoints.php");
-include("{$endpoints_folder}/markets_endpoints.php");
-include("{$endpoints_folder}/route_endpoints.php");
-include("{$endpoints_folder}/sovereignty_endpoints.php");
-include("{$endpoints_folder}/status_endpoints.php");
-include("{$endpoints_folder}/opportunities_endpoints.php");
-include("{$endpoints_folder}/universe_endpoints.php");
-include("{$endpoints_folder}/ui_endpoints.php");
-
 Class _endpoints{
     public $alliances;
     public $characters;
