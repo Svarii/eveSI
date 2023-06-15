@@ -1,4 +1,6 @@
 <?php
+namespace eveSI\endpoints\characters;
+
 Class characters_bookmarks_endpoints{
     public $bookmarks;
     public $folders;

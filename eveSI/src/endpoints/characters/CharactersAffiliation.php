@@ -1,4 +1,5 @@
 <?php
+namespace eveSI\endpoints\characters;
 //FIXME::POST Has not been implimented or tested yet
 //Will not work at all.
 class CharactersAffiliation extends eveSIDataConverter {

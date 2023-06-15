@@ -1,4 +1,6 @@
 <?php
+namespace eveSI\endpoints\characters;
+
 Class characters_calendar_endpoints{
     public $events;
     public $calendar;

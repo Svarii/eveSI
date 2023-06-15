@@ -1,4 +1,6 @@
 <?php
+namespace eveSI\endpoints\characters;
+
 Class publicInformation extends eveSI{
     function getAssociativeArray() : array{
         return json_decode($this->_esiRequestHandler('characters', $character_id), true);

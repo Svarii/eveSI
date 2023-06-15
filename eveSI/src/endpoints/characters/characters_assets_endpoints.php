@@ -1,4 +1,6 @@
 <?php
+namespace eveSI\endpoints\characters;
+
 Class characters_assets_endpoints{
     public $locations;
     public $names;
