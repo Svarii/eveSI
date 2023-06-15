@@ -1,5 +1,7 @@
 <?php
 //Bootstrap
+require('convertAPIData.php');
+require('eveSI.php');
 //TODO:: This needs a line by line review and testing
 spl_autoload_register(function ($class) {
     // Project-specific namespace prefix
