@@ -16,6 +16,7 @@
 namespace eveSI;
 
 // Use constants defined in config/core.php
+//FIXME: Centralize, anti-dependant
 use const eveSI\BASEURI; 
 use const eveSI\DATASOURCE;
 use const eveSI\LANGUAGE;
