@@ -1,5 +1,5 @@
 <?php
-namespace eveSI\endpoints\_endpoints;
+namespace eveSI\endpoints;
 
 Class _endpoints{
     public $alliances;
