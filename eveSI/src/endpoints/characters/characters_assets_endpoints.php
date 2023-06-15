@@ -4,8 +4,8 @@ Class characters_assets_endpoints{
     public $names;
     
     private function __construct(){
-        $this->locations = new characters_assets_locations();
-        $this->names = new characters_assets_names();
+        $this->locations = new CharacterAssetsLocations();
+        $this->names = new CharacterAssetsNames();
     }
 }
 ?>
