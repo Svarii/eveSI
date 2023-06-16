@@ -3,6 +3,7 @@
 require('convertAPIData.php');
 require('eveSI.php');
 //TODO:: This needs a line by line review and testing
+//FIXME:: Review and testing??  What were you smoking.  This is needs a complete rewrite.  It won't work like this...
 spl_autoload_register(function ($class) {
     // Project-specific namespace prefix
     $prefix = 'eveSI\\';
