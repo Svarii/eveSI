@@ -31,40 +31,7 @@ use const eveSI\SWAGGER_JSON;
 
 Class eveSI{
     protected function _esiRequestHandler($endpoint, $access_token = null, $method = 'GET', $body = null, $version = VERSION, $datasource = DATASOURCE, $base_uri = BASEURI):string{
-        //FIXME:: This shoud NOT NOT NOT be in here.  Get it out of here...
-        //These checks are in place to compensate for the possible absesnce of a /config/core.php file
-        //All of these constant variables should be defined in the constants.php file
-        //BASEURI
-        //USERAGENT
-        //VERSION
-        //DATASOURCE
-        //ENABLE_SSL
-        //This block of code is only here to ensure functionality of the _esiRequestHandler remains constant at its base level
-        if (!defined('BASEURI')){
-            $base_uri = "https://esi.evetech.net";
-        } else {
-            $base_uri = BASEURI;
-        }
-        if (!defined('USERAGENT')) {
-            $useragent = "{eveSI || https://github.com/Svarii/eveSI}";
-        } else {
-            $useragent = USERAGENT;
-        }
-        if (!defined('VERSION')){
-            $version = 'latest';
-        } else {
-            $version = VERSION;
-        }
-        if($defined('DATASOUCE')){
-            $datasource = 'tranquility';
-        } else {
-            $datasource = DATASOURCE;
-        }
-        if($defined('ENABLE_SSL')){
-            $datasource = true';
-        } else {
-            $datasource = ENABLE_SSL;
-        }                
+    //Just inject a config array             
        
         $esiURI = "{$base_uri}/{$version}/{$endpoint}/?datasource={$datasource}";      
         $ch = curl_init();
