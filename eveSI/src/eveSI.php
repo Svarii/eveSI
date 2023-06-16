@@ -3,7 +3,7 @@
  * @var eveSI
  * @author Svarii
  * @desc A PHP wrapper for the Eve Swagger Interface API<br/>
-            Endpoints Included: All (I think, as of 06/05/2023)<br/>
+            Endpoints Included: All (I think, as of 06/05/2023, lol, sure they were..  I'll add the endpoints all after I make sure atleast public character info works)<br/>
             eTag Compliance: No, Addition Planned
             cache-Control Compliance: No, Addition Planned
             error checking: Virtually none, Planned addition during marjor refactoring
@@ -22,7 +22,6 @@ use const eveSI\BASEURI;
 use const eveSI\DATASOURCE;
 use const eveSI\LANGUAGE;
 use const eveSI\VERSION;
-
 use const eveSI\CLIENT_ID;
 use const eveSI\SECRET_KEY;
 use const eveSI\ENABLE_SSL;
