@@ -16,6 +16,7 @@ Class ApplicationConfiguration{
      */
     public static function getApplicationConfiguration(): array
     {
+        //TODO:: Load Values from file if config file that holds only config values
         return [
             'CLIENT_ID' => '{YOUR_CLIENT_ID}', // The Client ID generated when registering an Eve Online Application
             'SECRET_KEY' => '{SECRET_KEY}', // The Secret Key generated when registering an Eve Online Application
