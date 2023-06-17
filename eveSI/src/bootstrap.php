@@ -19,5 +19,6 @@ function eveSIBootstrap($class) {
         require_once $file;
     }
 }
-?>
 
+spl_autoload_register('eveSIBootstrap');
+?>
