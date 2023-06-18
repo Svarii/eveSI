@@ -1,13 +1,7 @@
 <?php
-require_once('eveSI/boostrap.php');
+require_once('eveSI/src/bootstrap.php');
 
-$esi = new eveSI;
+$esi = new \eveSI\eveSI;
 
-function loadCharacterDetails($character_id){}
-    //Use Character Affiliation instead?
-    $characterDetails = [];
-    $characterDetails['characterName'] = $esi->characters->publicInformation->name;
-    $characterDetails['characterCorporation'] = $esi->characters->publicInformation->corporation;
-    return $characterDetails;
-}
+echo 'All systems online.  Awaiting commands.';
 ?>

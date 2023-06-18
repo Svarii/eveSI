@@ -1,4 +1,6 @@
 <?php
+use eveSI\eveSI;
+
 abstract class convertAPIData extends eveSI {
     protected function getAssociativeArray($id = null) : array {
         return json_decode($this->_esiRequestHandler($this->identifier($id)), true);
