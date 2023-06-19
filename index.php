@@ -10,6 +10,6 @@ function loadCharacterDetails($character_id){}
     $characterDetails['characterCorporationID'] = $esi->characters->publicInformation->getObject($character_id)->corporation;
     return $characterDetails;
 }
-
+$characterDetails = loadCharacterDetails($character_id);
 var_dump($characterDetails);
 ?>
