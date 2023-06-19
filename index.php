@@ -6,8 +6,8 @@ $esi = new eveSI;
 function loadCharacterDetails($character_id){}
     //Use Character Affiliation instead?
     $characterDetails = [];
-    $characterDetails['characterName'] = $esi->characters->publicInformation->name;
-    $characterDetails['characterCorporation'] = $esi->characters->publicInformation->corporation;
+    $characterDetails['characterName'] = $esi->characters->publicInformation->getObject($character_id)->name;
+    $characterDetails['characterCorporation'] = $esi->characters->publicInformation->getObject($character_id)->corporation;
     return $characterDetails;
 }
 ?>
