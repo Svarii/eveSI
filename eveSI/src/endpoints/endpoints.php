@@ -1,6 +1,6 @@
 <?php
 namespace eveSI\endpoints;
-FeeNiXX
+
 Class endpoints{
     public $alliances;
     public $characters;
