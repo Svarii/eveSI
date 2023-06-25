@@ -6,7 +6,7 @@
             Endpoints Included: All (I think, as of 06/05/2023, lol, sure they were..  I'll add the endpoints all after I make sure atleast public character info works)<br/>
             eTag Compliance: No, Addition Planned
             cache-Control Compliance: No, Addition Planned
-            error checking: Virtually none, Planned addition during marjor refactoring
+            error checking: none, Planned addition during marjor refactoring
             composer?  Nope, I'll look into this.
             docker?  Nope, sounds cool though, I'll have to check it out.
             PHPDocs: Yes - On Hold
@@ -16,7 +16,7 @@
 namespace eveSI;
 
 // Use constants defined in config/core.php
-//FIXME: Centralize, anti-dependant
+//FIXME: Centralize, anti-dependant // Load values from $configuration[];
 
 use const eveSI\BASEURI; 
 use const eveSI\DATASOURCE;
