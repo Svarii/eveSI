@@ -1,6 +1,6 @@
 <?php
 namespace eveSI\endpoints;
-
+FeeNiXX
 Class endpoints{
     public $alliances;
     public $characters;
@@ -48,7 +48,7 @@ Class endpoints{
 //FIXME:: Start HERE
 
 
-Class characters_implants extends convertAPIData{
+Class characters_implants extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/implants", $access_token), true);
     }
@@ -57,7 +57,7 @@ Class characters_implants extends convertAPIData{
     }
 }
 
-Class characters_contacts extends convertAPIData{
+Class characters_contacts extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/contacts", $access_token), true);
     }
@@ -66,7 +66,7 @@ Class characters_contacts extends convertAPIData{
     }
 }
 
-Class characters_contracts extends convertAPIData{
+Class characters_contracts extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/contracts", $access_token), true);
     }
@@ -75,7 +75,7 @@ Class characters_contracts extends convertAPIData{
     }
 }
 
-Class characters_fleet extends convertAPIData{
+Class characters_fleet extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/fleet", $access_token), true);
     }
@@ -84,7 +84,7 @@ Class characters_fleet extends convertAPIData{
     }
 }
 
-Class characters_mining extends convertAPIData{
+Class characters_mining extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/mining", $access_token), true);
     }
@@ -93,7 +93,7 @@ Class characters_mining extends convertAPIData{
     }
 }
 
-Class characters_location extends convertAPIData{
+Class characters_location extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/location", $access_token), true);
     }
@@ -102,7 +102,7 @@ Class characters_location extends convertAPIData{
     }
 }
 
-Class characters_online extends convertAPIData{
+Class characters_online extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/online", $access_token), true);
     }
@@ -112,7 +112,7 @@ Class characters_online extends convertAPIData{
 }
 
 
-Class characters_ship extends convertAPIData{
+Class characters_ship extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/ship", $access_token), true);
     }
@@ -121,7 +121,7 @@ Class characters_ship extends convertAPIData{
     }
 }
 
-Class characters_loyalty extends convertAPIData{
+Class characters_loyalty extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/loyalty", $access_token), true);
     }
@@ -130,7 +130,7 @@ Class characters_loyalty extends convertAPIData{
     }
 }
 
-Class characters_mail extends convertAPIData{
+Class characters_mail extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/mail", $access_token), true);
     }
@@ -139,7 +139,7 @@ Class characters_mail extends convertAPIData{
     }
 }
 
-Class characters_orders extends convertAPIData{
+Class characters_orders extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/orders", $access_token), true);
     }
@@ -148,7 +148,7 @@ Class characters_orders extends convertAPIData{
     }
 }
 
-Class characters_opportunities extends convertAPIData{
+Class characters_opportunities extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/opportunities", $access_token), true);
     }
@@ -157,7 +157,7 @@ Class characters_opportunities extends convertAPIData{
     }
 }
 
-Class characters_planets extends convertAPIData{
+Class characters_planets extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/planets", $access_token), true);
     }
@@ -166,7 +166,7 @@ Class characters_planets extends convertAPIData{
     }
 }
 
-Class characters_search extends convertAPIData{
+Class characters_search extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/search", $access_token), true);
     }
@@ -175,7 +175,7 @@ Class characters_search extends convertAPIData{
     }
 }
 
-Class characters_attributes extends convertAPIData{
+Class characters_attributes extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/fatigue", $access_token), true);
     }
@@ -184,7 +184,7 @@ Class characters_attributes extends convertAPIData{
     }
 }
 
-Class characters_skills extends convertAPIData{
+Class characters_skills extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/skills", $access_token), true);
     }
@@ -193,7 +193,7 @@ Class characters_skills extends convertAPIData{
     }
 }
 
-Class characters_wallet extends convertAPIData{
+Class characters_wallet extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/wallet", $access_token), true);
     }
@@ -202,7 +202,7 @@ Class characters_wallet extends convertAPIData{
     }
 }
 
-Class characters_killmails extends convertAPIData{
+Class characters_killmails extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/killmails", $access_token), true);
     }
@@ -212,7 +212,7 @@ Class characters_killmails extends convertAPIData{
     //->recent required?
 }
 
-Class characters_corporationhistory extends convertAPIData{
+Class characters_corporationhistory extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/corporationhistory", $access_token), true);
     }
@@ -221,7 +221,7 @@ Class characters_corporationhistory extends convertAPIData{
     }
 }
 
-Class characters_bookmarks extends convertAPIData{
+Class characters_bookmarks extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/bookmarks", $access_token), true);
     }
@@ -229,7 +229,7 @@ Class characters_bookmarks extends convertAPIData{
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/bookmarks", $access_token));
     }
 }
-Class characters_bookmarks_folders extends convertAPIData{
+Class characters_bookmarks_folders extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/bookmarks/folders", $access_token), true);
     }
@@ -237,7 +237,7 @@ Class characters_bookmarks_folders extends convertAPIData{
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/bookmarks/folders", $access_token));
     }
 }
-Class characters_calendar extends convertAPIData{
+Class characters_calendar extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/caldendar", $access_token), true);
     }
@@ -246,7 +246,7 @@ Class characters_calendar extends convertAPIData{
     }
 }
 
-Class characters_calendar_events extends convertAPIData{
+Class characters_calendar_events extends eveSI{
     public $attendees;
     private function __construct(){
         $this->attendees = new characters_calendar_events_attendees;
@@ -265,7 +265,7 @@ Class characters_calendar_events extends convertAPIData{
     }
 }
 
-Class characters_calendar_events_attendees extends convertAPIData{
+Class characters_calendar_events_attendees extends eveSI{
     function getAssociativeArray($character_id, $access_token){
         return json_decode($this->_esiRequestHandler("characters/{$character_id}/caldendar/events/attendees", $access_token), true);
     }
@@ -477,7 +477,7 @@ Class corporations_starbases{
     }
 }
 
-Class corporations_starbases_details extends convertAPIData{
+Class corporations_starbases_details extends eveSI{
     public function getAssociativeArray($corporation_id, $access_token, $starbase_id){
         return json_decode($this->_esiRequestHandler("corporations/{$corporation_id}/starbases/{$starbase_id}"), true);
     }
