@@ -3,12 +3,12 @@ require_once('eveSI/src/bootstrap.php');
 
 $esi = new \eveSI\eveSI;
 
-echo 'All systems online.  Awaiting commands.';
+echo 'All systems online. Awaiting commands.';
 
-//Example Usage
+// Example Usage
 //$charInfo = $esi->characters->publicInformation->getObject($character_id);
 
-function loadCharacterDetails($character_id){}
+function loadCharacterDetails($character_id){
     //Use Character Affiliation instead?
     $characterDetails = [];
     $characterDetails['characterName'] = $esi->characters->publicInformation->getObject($character_id)->name;
