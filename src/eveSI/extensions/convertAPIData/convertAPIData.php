@@ -1,7 +1,5 @@
 <?php
-use eveSI\eveSI;
-
-//FIXME:: Not PSR4 Compliant
+namespace eveSI\extensions\convertAPIData;
 
 abstract class convertAPIData extends eveSI {
     protected function getAssociativeArray($id = null) : array {
