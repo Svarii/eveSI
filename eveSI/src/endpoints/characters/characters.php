@@ -1,7 +1,7 @@
 <?php
 namespace eveSI\endpoints\characters;
 
-Class _endpoints{
+Class characters{
     public $agents_research;
     public $blueprints;
     public $corporationhistory;
