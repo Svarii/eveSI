@@ -1,5 +1,4 @@
 <?php
-namespace eveSI;
 require_once('eveSI.php');
 require_once('convertAPIData.php');
 
