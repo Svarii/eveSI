@@ -1,5 +1,5 @@
 <?php
-namespace eveSI\configuration;
+namespace eveSI\configuration\core;
 
 /**
  * Class ApplicationConfiguration
