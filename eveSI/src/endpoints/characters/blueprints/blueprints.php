@@ -1,7 +1,7 @@
 <?php
-namespace eveSI\endpoints\characters;
+namespace eveSI\endpoints\characters\blueprints;
 
-class CharactersBlueprints extends eveSIDataConverter {
+class blueprints extends convertAPIData{
     protected function getUrl($character_id) {
         return "characters/{$character_id}/blueprints";
     }
