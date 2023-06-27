@@ -1,7 +1,7 @@
 <?php
-namespace eveSI\endpoints\characters;
+namespace eveSI\endpoints\characters\calendar;
 
-Class characters_calendar_endpoints{
+Class calendar extends convertAPIData{
     public $events;
     public $calendar;
     private function __constructor(){
