@@ -1,7 +1,4 @@
 <?php
-require_once('eveSI.php');
-require_once('convertAPIData.php');
-
 function eveSIBootstrap($class) {
     $prefix = 'eveSI\\';
     $base_dir = __DIR__;
