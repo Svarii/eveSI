@@ -4,7 +4,7 @@ require_once('convertAPIData.php');
 
 function eveSIBootstrap($class) {
     $prefix = 'eveSI\\';
-    $base_dir = __DIR__ . '/endpoints/';
+    $base_dir = __DIR__;
     $len = strlen($prefix);
 
     if (strncmp($prefix, $class, $len) !== 0) {
