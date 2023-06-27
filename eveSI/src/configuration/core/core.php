@@ -8,7 +8,7 @@ namespace eveSI\configuration\core;
  */
 //TODO: Create an install.php file that loads a GUI for the user to create a configuration file that is written to the drive.
 //          Then modify this code to check for a configuration file and load that if it exists.
-Class ApplicationConfiguration{
+Class core{
     /**
      * Retrieves the application configuration.
      *
