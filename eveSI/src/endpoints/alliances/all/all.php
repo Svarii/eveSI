@@ -1,7 +1,7 @@
 <?php
-namespace eveSI\endpoints\alliances;
+namespace eveSI\endpoints\alliances\all;
 
-Class allAlliancesList extends convertAPIData {
+Class all extends convertAPIData {
     protected function identifier($id = null) {
         return 'alliances';
     }

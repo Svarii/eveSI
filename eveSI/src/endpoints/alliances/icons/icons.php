@@ -1,7 +1,7 @@
 <?php
-namespace eveSI\endpoints\alliances;
+namespace eveSI\endpoints\alliances\icons;
 
-Class allianceIcon extends convertAPIData{   
+Class icons extends convertAPIData{   
     protected function identifier($id) {
         return "alliances/{$id}/icons";
     }
