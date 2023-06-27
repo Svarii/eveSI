@@ -1,9 +1,11 @@
 <?php
 namespace eveSI\endpoints\incursions;
 
-public $list;
-
 Class list{
-    $this->list = new eveSI\endpoints\incursions\list
+    public $list;
+    
+    public funcion __construct(){
+        $this->list = new eveSI\endpoints\incursions\list
+    }
 }
 ?>

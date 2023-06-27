@@ -1,9 +1,11 @@
 <?php
 namespace eveSI\endpoints\loyalty;
 
-public $stores;
-
 Class loyalty{
-    $stores = new eveSI\loyalty\stores;
+    public $stores;
+    
+    public function __construct(){
+        $stores = new eveSI\loyalty\stores;
+    }
 }
 ?>

@@ -1,9 +1,11 @@
 <?php
 namespace eveSI\insurance;
 
-public $prices;
-
 Class prices extends eveSI{
-    $this->prices = new eveSI\endpoints\prices;
+    public $prices;
+    
+    public function __construct(){
+        $this->prices = new eveSI\endpoints\prices;
+    }
 }
 ?>
