@@ -1,5 +1,5 @@
 <?php
-namespace eveSI\endpoints\characters\agents_research;
+namespace eveSI\endpoints\characters\agents\research;
 
 class agents_research extends eveSIDataConverter {
     protected function identifier($character_id) {
