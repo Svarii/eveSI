@@ -1,5 +1,4 @@
 <?php
-namespace eveSI;
 use eveSI\eveSI;
 
 abstract class convertAPIData extends eveSI {
