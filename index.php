@@ -12,7 +12,7 @@ function loadCharacterDetails($character_id, $esi){
     //Use Character Affiliation instead?
     $characterDetails = [];
     $characterDetails['characterName'] = $esi->characters->publicInformation->getObject($character_id)->name;
-    $characterDetails['characterCorporation'] = $esi->characters->publicInformation->getAsscoaiteArray($characer_id)['corporation'];
+    $characterDetails['characterCorporation'] = $esi->characters->publicInformation->getAssociativeArray($characer_id)['corporation'];
     return $characterDetails;
 }
 $characterDetails = loadCharacterDetails($character_id, $esi);
