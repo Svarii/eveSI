@@ -2,8 +2,8 @@
 namespace eveSI\endpoints\universe\moons;
 
 Class moons extends eveSI{
-    protected fucntion identifer(){
-        return "universe/moons";
+    protected fucntion identifer($moon_id){
+        return "universe/moons/{$moon_id}";
     }
 }
 ?>
