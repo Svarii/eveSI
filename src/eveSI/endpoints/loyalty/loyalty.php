@@ -5,7 +5,7 @@ Class loyalty{
     public $stores;
     
     public function __construct(){
-        $stores = new eveSI\loyalty\stores;
+        $stores = new eveSI\loyalty\stores();
     }
 }
 ?>

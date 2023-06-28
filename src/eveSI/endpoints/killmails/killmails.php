@@ -1,7 +1,9 @@
 <?php
 namespace eveSI\endpoints\killmails;
 
-//TODO: Dual input abstract function is needed for POST Bulk requests and killmails endpoint
-
+Class killmails extends eveSI{
+    protected function identifier($killmail_id, $killmail_hash){
+        return "killmails/{$killmail_id}/{$killmail_hash}";
+    }
 }
 ?>

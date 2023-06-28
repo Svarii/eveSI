@@ -8,8 +8,8 @@ Class corporations{
     public $containers;
     
     public funcion __construct(){
-        $this->information = new eveSI\endpoints\corporations\information;
-        $this->alliancehistory = new eveSI\endpoints\corporations\alliancehistory;
+        $this->information = new eveSI\endpoints\corporations\information();
+        $this->alliancehistory = new eveSI\endpoints\corporations\alliancehistory();
     }
 }
 ?>

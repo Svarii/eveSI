@@ -10,11 +10,11 @@ Class markets extends eveSI{
     public $structures;
     
     public funcion __construct(){
-        $this->history = new eveSI\markets\history;
-        $this->orders = eveSI\markets\orders;
-        $this->types = eveSI\markets\types;
-        $this->group = eveSI\markets\groups;
-        $this->prices = eveSI\markets\prices;
+        $this->history = new eveSI\markets\history();
+        $this->orders = new eveSI\markets\orders();
+        $this->types = new eveSI\markets\types();
+        $this->group = new eveSI\markets\groups();
+        $this->prices = new eveSI\markets\prices();
     }
 }
 ?>

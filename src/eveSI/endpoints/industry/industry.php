@@ -6,8 +6,8 @@ Class industry{
     public $systems;    
 
     public function __construct(){
-        $this->facilities = new eveSI\industry\facilities;
-        $this->systems = new eveSI\industry\systems;    
+        $this->facilities = new eveSI\industry\facilities();
+        $this->systems = new eveSI\industry\systems();    
     }
 }
 ?>
