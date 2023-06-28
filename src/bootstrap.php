@@ -1,4 +1,7 @@
 <?php
+//Due to the large number of class files in this project, no class files are loaded explicitly.
+//Therfore this bootloader is required to accomidate for ease of use of every method in the eveSI collection.
+
 function eveSIBootstrap($class) {
     $prefix = 'eveSI\\';
     $base_dir = __DIR__;
