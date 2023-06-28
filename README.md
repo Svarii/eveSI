@@ -2,7 +2,8 @@
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 Do NOT, I repeat do NOT use this code.  This is nowhere near done.
-This is what you're looking for: ![eseye](https://github.com/eveseat/eseye)
+This is what you're looking for:
+[eseye](https://github.com/eveseat/eseye)
 
 Savepoint for eveSI v0.0.01a
 -preAlpha code in developement
